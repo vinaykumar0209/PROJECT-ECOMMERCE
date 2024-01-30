@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricstore | Ecommerce Website Design </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+     <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="Ecommerce-images/SPORTS-finallogo.png" width="100px"></a>
+            </div>
+         <nav>
+            <ul id="MenuItems">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about-us.html">About</a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="account.html">Account</a></li>
+                  <li><a  href="contact.html">Contact</a></li>
+            </ul>
+         </nav>
+                <a href="cart.html"><img src="Ecommerce-images/cart.png" width ="30px" height="30px"></a>
+                 <img src="Ecommerce-images/menu.png"  class="menu-icon" onclick="menutoggle()" alt="menu">
+        </div>
+     </div>
+    </div>
+
+<!-- contact us form-->
+
+    <div class="contact-container">
+      <div class="content">
+         <div class="right-side">
+             <div class="topic-text">Reach us if  any Query</div>
+             <p>Any query regarding product delivery , product damages and refund issues.you can reach us by messaging from here.</p>
+
+            <form name="form-contact-us" method="post">
+            <div class="input-box">
+              <input type="text" name="Fullname" placeholder="Enter your name">
+            </div>
+            <div class="input-box">
+              <input type="text" name="EmailID" placeholder="Enter your email">
+            </div>
+            <div class="input-box">
+                <input type="number" name="Number" placeholder="mobile number">
+              </div>
+            <div class="input-box message-box">
+                <input type="text" name="Description" placeholder="Message Here!!">
+            </div>
+            <div>
+                <button type="submit" class="button">submit</button>
+            </div>
+          </form>
+
+         </div>
+        <div class="left-side">
+          <div class="address details">
+            <i class="fa-solid fa-location-dot"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Anakapalle BH12</div>
+          <div class="text-two">Visakhaptnam</div>
+         </div>
+         <div class="phone details">
+            <i class="fa-solid fa-phone"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one"><a href="https://wa.me/+9148339880" target="_blank">+91 48339880</a></div>
+          <div class="text-two"><a href="https://wa.me/+9166644533" target="_blank">+91 66644533</a></div>
+         </div>
+         <div class="email details">
+            <i class="fa-solid fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one"><a href="mailto:cricstore@gmail.com" target="_blank">cricstore@gmail.com</a></div>
+          <div class="text-two"><a href="mailto:vinay669@gmail.com" target="_blank">vinay669@gmail.com</a></div>
+         </div>
+        </div>
+    </div>
+  </div>
+    
+        
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download our App for Android and ios mobile phone</p>
+                <div class="app-logo">
+                    <a href="https://play.google.com/store/apps" target="_blank"><img src="Ecommerce-images/play-store.png"></a> 
+                    <a href="https://www.apple.com/in/app-store/" target="_blank"><img src="Ecommerce-images/app-store.png"></a> 
+                </div>
+            </div>
+            <div class="footer-col-2">
+               <img src="Ecommerce-images/SPORTS-finallogo.png">
+                <p>Our Purpose is to sustainably make the pleasure and benefits of sports accessible to the many sports lovers across the world</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <a href="https://cricstorebyvinay.blogspot.com/2023/02/blog-post.html" target="_blank"><li>Blog post</li></a>
+                    <li>Return Policy</li>
+                    <li>Join Affiliates</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follows us</h3>
+                <ul>
+                    <a href="https://www.facebook.com/" target="_blank"><li><i class="fa-brands fa-facebook"></i>Facebook</li></a>
+                    <a href="https://www.instagram.com/" target="_blank"><li><i class="fa-brands fa-instagram"></i>Instagram</li></a>
+                    <a href="https://www.youtube.com/" target="_blank"><li><i class="fa-brands fa-youtube"></i>Youtube</li></a>
+                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target="_blank"><li><i class="fa-brands fa-twitter"></i>Twitter</li></a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 - CricStore</p>
+    </div>
+</div>
+
+<!-- js for toggle menu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        function menutoggle()
+        {
+            if( MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight= "400px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight= "0px";
+                }
+        }
+    </script>
+
+<!-- Google sheet collection contact details -->
+ 
+<script>
+    const scriptURL =
+        'https://script.google.com/macros/s/AKfycbwZbSClIMx8wEPSO5MVW4NsJ-qjerChKfD1sw_VTwFw_Iau2X_vPnDsUHo2uDR5nsjk/exec'
+    const form = document.forms['form-contact-us']
+ 
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => alert(
+                "we have successfully received your query!!!"))
+            .catch(error => console.error('Error!', error.message))
+    })
+ 
+ </script>
+ 
+ 
+ 
+</body>
+</html>

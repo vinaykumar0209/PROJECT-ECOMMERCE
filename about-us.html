@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CricStore | Ecommerce Website Design </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+     <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="Ecommerce-images/SPORTS-finallogo.png" width="125px"></a>
+            </div>
+         <nav>
+            <ul id="MenuItems">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about-us.html">About</a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="account.html">Account</a></li>
+                  <li><a  href="">Contact</a></li>
+            </ul>
+         </nav>
+                <a href="cart.html"><img src="Ecommerce-images/cart.png" width ="30px" height="30px"></a>
+                 <img src="Ecommerce-images/menu.png"  class="menu-icon" onclick="menutoggle()" alt="menu">
+        </div>
+     </div>
+   </div> 
+   
+<!-- About us details  -->
+<div id="ABOUT">
+    <div class="about-1">
+        <h1> ABOUT US </h1>
+    </div>
+    <div id="about-2">
+    <div class="content-box-lg">
+        <div class="about-container">
+            <div class="row">
+                <div class="col-md-6">
+                   <div class="about-item text-center">
+                    <i class="fa fa-book"></i>
+                    <h3>MISSION</h3>
+                    <hr>
+                    <p> The mission of "CricStore" could be to provide a convenient, accessible, and efficient platform for Customers to purchase various Cricketing goods online, while offering 
+                        a wide selection, Affordable prices, and a positive shopping experience.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                   <div class="about-item text-center">
+                    <i class="fa fa-globe"></i>
+                    <h3>VISION</h3>
+                    <hr>
+                    <p>The vision of "CricStore" could be to provide a seamless and convenient shopping experience for customers looking to purchase cricket gear and merchandise. This could be achieved through features
+                        such as a user-friendly interface, a wide range of products, secure payment options and efficient customer service. The website could also strive to create a community for cricket enthusiasts, by offering
+                        product reviews, a blog section, and opportunities for interaction through social media. The ultimate goal could be to become the go-to destination for all things cricket and to deliver a memorable and satisfying shopping experience to every customer. </p>
+                    </div>
+                </div>
+             </div>
+           </div>
+        </div>
+     </div>   
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download our App for Android and ios mobile phone</p>
+                <div class="app-logo">
+                    <a href="https://play.google.com/store/apps" target="_blank"><img src="Ecommerce-images/play-store.png"></a> 
+                    <a href="https://www.apple.com/in/app-store/" target="_blank"><img src="Ecommerce-images/app-store.png"></a> 
+                </div>
+            </div>
+            <div class="footer-col-2">
+               <img src="Ecommerce-images/SPORTS-finallogo.png">
+                <p>Our Purpose is to sustainably make the pleasure and benefits of sports accessible to the many sports lovers across the world</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <a href="https://cricstorebyvinay.blogspot.com/2023/02/blog-post.html" target="_blank"><li>Blog post</li></a>
+                    <li>Return Policy</li>
+                    <li>Join Affiliates</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follows us</h3>
+                <ul>
+                    <a href="https://www.facebook.com/" target="_blank"><li><i class="fa-brands fa-facebook"></i>Facebook</li></a>
+                    <a href="https://www.instagram.com/" target="_blank"><li><i class="fa-brands fa-instagram"></i>Instagram</li></a>
+                    <a href="https://www.youtube.com/" target="_blank"><li><i class="fa-brands fa-youtube"></i>Youtube</li></a>
+                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target="_blank"><li><i class="fa-brands fa-twitter"></i>Twitter</li></a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 - CricStore</p>
+    </div>
+</div>
+
+<!-- js for toggle menu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        function menutoggle()
+        {
+            if( MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight= "400px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight= "0px";
+                }
+        }
+    </script>
+</body>
+</html>   
